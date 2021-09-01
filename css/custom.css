@@ -1,5 +1,5 @@
 .tab {
-  overflow: hidden;
+  overflow: hidden !important;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
@@ -28,8 +28,8 @@
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+  display: none !important;
   padding: 6px 12px;
   border: 1px solid #ccc;
-  border-top: none;
+  border-top: none !important;
 }
