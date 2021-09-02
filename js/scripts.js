@@ -52,3 +52,29 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+function loadData(){
+	let template = document.getElementById('template');
+
+  let div = document.createElement('div');
+  div.className = 'row gx-4 mb-5 mb-lg-4 justify-content-center';
+
+  document.getElementById('items').appendChild(div);
+
+	dataset.forEach(function(item) {
+  	// create a new element with the contents of the template
+  	let div = document.createElement('div');
+
+  	div.className = 'col-lg-6';
+  	div.innerHTML = template.innerHTML.replace('{{title}}', item.name);
+
+  	document.getElementById('items').appendChild(div);
+	});
+}
+
+let dataset = JSON.parse(data);
+
+function openInNewTab(){
+  window.open("../pdfs/essay.pdf");
+}
