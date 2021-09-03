@@ -7,8 +7,11 @@
 // Scripts
 //
 
-window.addEventListener('DOMContentLoaded', event => {
 
+let displayedPages = 0;
+
+window.addEventListener('DOMContentLoaded', event => {
+console.log(document.length);
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -51,29 +54,60 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+
+    //preload first couple of chapters
+    replaceText(document.getElementById('firstBox'));
+    replaceText(document.getElementById('secondBox'));
+
+    loadData();
+
 });
 
+function replaceText(element) {
+  element.innerHTML = dataset[displayedPages][0];
+  console.log(dataset[displayedPages][0])
+  displayedPages++;
+}
 
-function loadData(){
-	let template = document.getElementById('template');
-
+function createRow() {
   let div = document.createElement('div');
   div.className = 'row gx-4 mb-5 mb-lg-4 justify-content-center';
+  return div;
+}
+
+function loadData(){
+
+  let flag = true;
+  if (displayedPages >= 9) {
+    flag = false;
+    return false;
+  }
+
+
+	let template = document.getElementById('template');
+
+  div = createRow();
 
   document.getElementById('items').appendChild(div);
 
-	dataset.forEach(function(item) {
-  	// create a new element with the contents of the template
-  	let div = document.createElement('div');
+  for (let i = 0; i < 2; i++) {
+    if (!flag) {return false;}
+    let item = dataset[i];
+
+    let div = document.createElement('div');
 
   	div.className = 'col-lg-6';
-  	div.innerHTML = template.innerHTML.replace('{{title}}', item.name);
+  	div.innerHTML = template.innerHTML.replace('{{title}}', dataset[displayedPages][0]);
 
   	document.getElementById('items').appendChild(div);
-	});
-}
 
-let dataset = JSON.parse(data);
+    displayedPages++;
+    console.log(displayedPages);
+  }
+
+
+
+}
 
 function openInNewTab(){
   window.open("../pdfs/essay.pdf");
