@@ -58,13 +58,15 @@ console.log(document.length);
 
     //preload first couple of chapters
 
-    for (let i = 0; i < 4; i++) {
-      loadData(dataset[i][0]);
-    }
+    initialLoad();
 
 });
 
-
+function initialLoad() {
+  for (let i = 0; i < 4; i++) {
+    loadData(dataset[i][0]);
+  }
+}
 
 function parseToPageNumber(value) {
   for (let i = 0; i < dataset.length; i++) {
@@ -167,11 +169,14 @@ function clearPage() {
     console.log('removed');
   }
   displayedPages = 0;
+  rowCounter = 0;
 }
 
 //remake this
 function resetPages() {
-  clearPage
+  clearPage();
+  console.log(displayedPages);
+  initialLoad();
 }
 
 
