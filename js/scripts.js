@@ -91,7 +91,9 @@ function createRow() {
 
 
 function loadMore() {
-  loadData("one");
+  for (let i = 0; i < 2; i++) {
+    loadData(dataset[displayedPages][0]);
+  }
 }
 
 function loadData(value){
