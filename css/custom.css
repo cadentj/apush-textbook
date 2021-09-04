@@ -24,6 +24,10 @@
 }
 */
 
+.contact-section {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg") !important;
+}
+
 #mainNav.navbar-shrink .nav-link {
 }
 
@@ -61,6 +65,10 @@
   -o-background-size: cover;
   background-size: cover !important;
 
+}
+
+.projects-section {
+  padding-bottom: 4rem !important;
 }
 
 .about-section {

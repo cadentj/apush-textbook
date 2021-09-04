@@ -85,7 +85,7 @@ function parseToPageNumber(value) {
 
 function createRow() {
   let div = document.createElement('div');
-  div.className = 'row row-refrence gx-4 mb-5 mb-lg-4 justify-content-center';
+  div.className = 'row row-refrence gx-4 mb-2 mb-lg-4 justify-content-center';
   return div;
 }
 
