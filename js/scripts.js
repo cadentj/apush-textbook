@@ -69,11 +69,16 @@ console.log(document.length);
 function parseToPageNumber(value) {
   for (let i = 0; i < dataset.length; i++) {
     let title = dataset[i][0];
-    let dashLocation = title.search("-");
-    let firstPage = title.substring(0, dashLocation);
-    let lastPage = title.substring(dashLocation + 1, title.length);
-    let pageArray = [parseInt(firstPage), parseInt(lastPage)];
+    if (value === title) {
+      let dashLocation = title.search("-");
+      let firstPage = title.substring(0, dashLocation);
+      let lastPage = title.substring(dashLocation + 1, title.length);
+      let pageArray = [parseInt(firstPage), parseInt(lastPage)];
+      console.log(pageArray);
+      return pageArray;
+    }
   }
+
 }
 
 function createRow() {
@@ -88,7 +93,6 @@ function loadMore() {
 }
 
 function loadData(value){
-  parseToPageNumber(value);
 
 	let template = document.getElementById('template');
 
@@ -141,8 +145,16 @@ function createPagesTemplate(whichPages, template) {
 
 function searchValue() {
   let value = document.getElementById('textInput').value;
+  let intValue = parseInt(value);
   clearPage();
-  createNewData(value);
+
+  for (let i = 0; i < dataset.length; i++) {
+    let title = dataset[i][0];
+    let bounds = parseToPageNumber(title);
+    if (intValue <= bounds[1] && intValue >= bounds[0]) {
+      createNewData(title);
+    }
+  }
 
 }
 
@@ -159,11 +171,7 @@ function clearPage() {
 
 //remake this
 function resetPages() {
-  let columns = document.getElementsByClassName('remove-column');
-
-  for (let i = 0; i < dataset.length; i++) {
-    columns[i].style.display = 'block';
-  }
+  clearPage
 }
 
 
