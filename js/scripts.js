@@ -58,15 +58,24 @@ console.log(document.length);
 
     //preload first couple of chapters
 
-    loadData("one");
-    loadData("nine");
+    for (let i = 0; i < 4; i++) {
+      loadData(dataset[i][0]);
+    }
 
 });
 
-function replaceText(element) {
-  element.innerHTML = dataset[displayedPages][0];
-  console.log(dataset[displayedPages][0])
-  displayedPages++;
+
+
+function parseToPageNumber(value) {
+  for (let i = 0; i < dataset.length; i++) {
+    let title = dataset[i][0];
+    let dashLocation = title.search("-");
+    let firstPage = title.substring(0, dashLocation);
+    let lastPage = title.substring(dashLocation + 1, title.length);
+    console.log(firstPage + '&' + lastPage);
+    let pageArray = [parseInt(firstPage), parseInt(lastPage)];
+    console.log(pageArray);
+  }
 }
 
 function createRow() {
@@ -76,8 +85,12 @@ function createRow() {
 }
 
 
-function loadData(value){
+function loadMore() {
+  loadData("two");
+}
 
+function loadData(value){
+  parseToPageNumber(value);
 	let template = document.getElementById('template');
 
   let div = createRow();
@@ -100,6 +113,8 @@ function loadData(value){
 
 }
 
+
+
 function createNewData(value) {
   for (let i = 0; i < dataset.length; i++) {
     if (dataset[i][0] === value) {
@@ -121,7 +136,6 @@ function createPagesTemplate(whichPages, template) {
       break;
     }
   }
-  console.log(whichPages);
 
   return innerDiv;
 }
