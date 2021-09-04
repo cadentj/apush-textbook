@@ -134,10 +134,11 @@ function createPagesTemplate(whichPages, template) {
 
   for (let i = 0; i < dataset.length; i++) {
     let title = dataset[i][0];
+    let link = dataset[i][1];
 
     if (title === whichPages) {
       innerDiv.className = 'col-lg-6 remove-column';
-      innerDiv.innerHTML = template.innerHTML.replace('{{title}}', title);
+      innerDiv.innerHTML = template.innerHTML.replace('{{title}}', title).replace('{{pdf-link}}', link);
       break;
     }
   }
@@ -149,6 +150,7 @@ function searchValue() {
   let value = document.getElementById('textInput').value;
   let intValue = parseInt(value);
   clearPage();
+
 
   for (let i = 0; i < dataset.length; i++) {
     let title = dataset[i][0];
