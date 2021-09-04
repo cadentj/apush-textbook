@@ -1,32 +1,3 @@
-let dataset = [
-  [
-    "one"
-
-  ],
-  [
-    "two"
-  ],
-  [
-    "three"
-  ],
-  [
-    "four"
-
-  ],
-  [
-    "five"
-  ],
-  [
-    "six"
-  ],
-  [
-    "seven"
-
-  ],
-  [
-    "eight"
-  ],
-  [
-    "nine"
-  ]
-]
+function openInNewTab(){
+  window.open("../pdfs/essay.pdf");
+}

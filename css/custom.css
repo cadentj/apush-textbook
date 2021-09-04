@@ -10,7 +10,6 @@
     padding: 20px;
     border-radius: 10px;
     border:solid 1px #aaa;
-    display:inline-block;
     width: 31%;
     margin:1%;
 }
@@ -66,6 +65,7 @@
 
 .about-section {
   padding-top: 10rem;
+  padding-bottom: 5rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, .9) 20%, rgba(0, 0, 0, 0.8) 100%), url("../assets/img/bg-masthead.jpg") !important;
   background-attachment: scroll !important;
 }
