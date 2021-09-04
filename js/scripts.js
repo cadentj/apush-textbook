@@ -72,9 +72,7 @@ function parseToPageNumber(value) {
     let dashLocation = title.search("-");
     let firstPage = title.substring(0, dashLocation);
     let lastPage = title.substring(dashLocation + 1, title.length);
-    console.log(firstPage + '&' + lastPage);
     let pageArray = [parseInt(firstPage), parseInt(lastPage)];
-    console.log(pageArray);
   }
 }
 
@@ -86,11 +84,12 @@ function createRow() {
 
 
 function loadMore() {
-  loadData("two");
+  loadData("one");
 }
 
 function loadData(value){
   parseToPageNumber(value);
+
 	let template = document.getElementById('template');
 
   let div = createRow();
@@ -150,12 +149,15 @@ function searchValue() {
 
 function clearPage() {
   let rows = document.getElementsByClassName('row-refrence');
-  for (let i = 0; i < rows.length; i++) {
-    rows[i].remove();
+  let x = rows.length;
+  for (let i = 0; i < x; i++) {
+    rows[0].remove();
+    console.log('removed');
   }
   displayedPages = 0;
 }
 
+//remake this
 function resetPages() {
   let columns = document.getElementsByClassName('remove-column');
 
