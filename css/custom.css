@@ -1,5 +1,5 @@
 .img-fluid {
-  object-fit: none !important; /* Do not scale the image */
+  object-fit: cover !important; /* Do not scale the image */
   object-position: center !important; /* Center the image within the element */
   width: 100% !important;
   height: 100% !important;
@@ -25,10 +25,11 @@
 */
 
 .contact-section {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg") !important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 0%, #000 100%), url("../assets/img/bg-signup.jpg") !important;
 }
 
-#mainNav.navbar-shrink .nav-link {
+#mainNav.navbar-shrink {
+  background-color: rgba(248, 249, 250) !important;
 }
 
 .items .item .item-title{
@@ -58,7 +59,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 90%, #000 100%), url("../assets/img/writing-tutor.jpg") no-repeat center center fixed !important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 90%, #000 100%), url("../assets/img/books.png") no-repeat center center fixed !important;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
