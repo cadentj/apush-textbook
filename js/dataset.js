@@ -15,12 +15,12 @@ let dataset = [
     "28-36",
     "pdfs/28-36.pdf",
     "https://drive.google.com/file/d/128P964l8zkqUhDJ3Jg9YwBesB5JaxA9p/view?usp=sharing",
-    "apush-textbook/assets/chapter-images/aztec.jfif"
+    "assets/chapter-images/aztec.jfif"
   ],
   [
     "Zinn",
     "pdfs/zinn.pdf",
     "zinn.pdf",
-    "apush-textbook/assets/chapter-images/zinn-christopher.jpg"
+    "assets/chapter-images/zinn-christopher.jpg"
   ]
 ]
