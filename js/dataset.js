@@ -1,38 +1,18 @@
 let dataset = [
   [
-    "1-15",
-    "/pdfs/essay.pdf"
+    "1-18",
+    "/pdfs/1-18.pdf"
   ],
   [
-    "16-30",
-    "/pdfs/essay.pdf"
+    "18-23",
+    "/pdfs/18-23.pdf"
   ],
   [
-    "31-45",
-    "/pdfs/essay.pdf"
+    "28-36",
+    "/pdfs/28-36.pdf"
   ],
   [
-    "46-60",
-    "/pdfs/essay.pdf"
-  ],
-  [
-    "61-75",
-    "/pdfs/essay.pdf"
-  ],
-  [
-    "76-90",
-    "/pdfs/essay.pdf"
-  ],
-  [
-    "91-105",
-    "/pdfs/essay.pdf"
-  ],
-  [
-    "106-120",
-    "/pdfs/essay.pdf"
-  ],
-  [
-    "121-135",
+    "Zinn",
     "/pdfs/essay.pdf"
   ]
 ]
