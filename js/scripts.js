@@ -92,7 +92,7 @@ function createRow() {
 
 function loadMore() {
   for (let i = 0; i < 2; i++) {
-    loadData(dataset[displayedPages][0]);
+    loadData(dataset[displayedPages][0].toLowerCase());
   }
 }
 
@@ -124,14 +124,14 @@ function loadData(value){
 
 function createNewData(value) {
   for (let i = 0; i < dataset.length; i++) {
-    if (dataset[i][0] === value) {
+    if (dataset[i][0].toLowerCase() === value) {
       loadData(value);
     }
   }
 }
 
 function createPagesTemplate(whichPages, template) {
-
+  console.log("yay");
   let innerDiv = document.createElement('div');
 
   for (let i = 0; i < dataset.length; i++) {
@@ -140,10 +140,11 @@ function createPagesTemplate(whichPages, template) {
     let drive = dataset[i][2];
     let image = dataset[i][3];
 
-    if (title === whichPages) {
+
+    if (title.toLowerCase() === whichPages.toLowerCase()) {
       innerDiv.className = 'col-lg-6 remove-column';
       innerDiv.innerHTML = template.innerHTML.replace('{{title}}', title).replace('{{image-location}}', image).replace('{{pdf-link}}', pdf).replace('{{drive-link}}', drive);
-      
+
       break;
     }
   }
@@ -157,14 +158,35 @@ function searchValue() {
   clearPage();
 
 
-  for (let i = 0; i < dataset.length; i++) {
-    let title = dataset[i][0];
-    let bounds = parseToPageNumber(title);
-    if (intValue <= bounds[1] && intValue >= bounds[0]) {
-      createNewData(title);
+  if (isNaN(intValue)) {
+    if (!searchTerms(value)) {
+      createNewData(value.toLowerCase());
+    } else {
+      createNewData(searchTerms(value).toLowerCase());
+    }
+  } else {
+    for (let i = 0; i < dataset.length; i++) {
+      let title = dataset[i][0];
+      let bounds = parseToPageNumber(title);
+      if (intValue <= bounds[1] && intValue >= bounds[0]) {
+        createNewData(title);
+      }
     }
   }
 
+
+}
+
+function searchTerms(value) {
+  for (let i = 0; i < dataset.length; i++) {
+    let terms = dataset[i][4];
+    for (let j = 0; j < terms.length; j++) {
+      if (terms[j].toLowerCase() === value) {
+        return dataset[i][0];
+      }
+    }
+  }
+  return false;
 }
 
 
@@ -173,7 +195,6 @@ function clearPage() {
   let x = rows.length;
   for (let i = 0; i < x; i++) {
     rows[0].remove();
-    console.log('removed');
   }
   displayedPages = 0;
   rowCounter = 0;
