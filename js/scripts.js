@@ -181,7 +181,7 @@ function searchTerms(value) {
   for (let i = 0; i < dataset.length; i++) {
     let terms = dataset[i][4];
     for (let j = 0; j < terms.length; j++) {
-      if (terms[j].toLowerCase() === value) {
+      if (terms[j].toLowerCase() === value.toLowerCase()) {
         return dataset[i][0];
       }
     }
