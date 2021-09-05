@@ -65,11 +65,17 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover !important;
-
 }
 
 .projects-section {
-  padding-bottom: 4.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
 }
 
 .about-section {

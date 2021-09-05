@@ -26,5 +26,5 @@ let dataset = [
     "zinn.pdf",
     "assets/chapter-images/zinn-christopher.jpg",
     ["sioux"]
-  ]
+  ],
 ]
