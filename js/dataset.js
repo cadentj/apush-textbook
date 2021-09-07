@@ -1,5 +1,26 @@
 let dataset = [
   [
+    "44-58",
+    "pdfs/44-58.pdf",
+    "zinn.pdf",
+    "assets/chapter-images/zinn-christopher.jpg",
+    ["sioux"]
+  ],
+  [
+    "58-65",
+    "pdfs/58-65.pdf",
+    "zinn.pdf",
+    "assets/chapter-images/zinn-christopher.jpg",
+    ["sioux"]
+  ],
+  [
+    "76-79",
+    "pdfs/76-79.pdf",
+    "zinn.pdf",
+    "assets/chapter-images/zinn-christopher.jpg",
+    ["sioux"]
+  ],
+  [
     "1-18",
     "pdfs/1-18.pdf",
     "https://drive.google.com/file/d/17asoiZefBqQvzjy3-DRfj1fnH-Sk0S4F/view?usp=sharing",
@@ -26,5 +47,5 @@ let dataset = [
     "zinn.pdf",
     "assets/chapter-images/zinn-christopher.jpg",
     ["sioux"]
-  ],
+  ]
 ]
