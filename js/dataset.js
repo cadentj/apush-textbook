@@ -4,21 +4,28 @@ let dataset = [
     "pdfs/44-58.pdf",
     "https://drive.google.com/file/d/1O58uaWfENE5mktNUDs55nxF6mAiolpBe/view?usp=sharing",
     "assets/chapter-images/44-58.jpg",
-    ["sioux"]
+    ["plantations", "slaves", "slave trade"]
   ],
   [
     "58-65",
     "pdfs/58-65.pdf",
     "https://drive.google.com/file/d/1dJuFZM7lO_RQfSWMquJdQUjYUt6rOMXG/view?usp=sharing",
     "assets/chapter-images/58-65.jpg",
-    ["sioux"]
+    ["pilgrims", "plymouth"]
   ],
   [
     "76-79",
     "pdfs/76-79.pdf",
     "https://drive.google.com/file/d/1Y30vhawbucAdH-E0m_fDFqKIuvMAN5Ve/view?usp=sharing",
     "assets/chapter-images/76-79.jpg",
-    ["sioux"]
+    ["chesapeake"]
+  ],
+  [
+    "Zinn",
+    "pdfs/zinn.pdf",
+    "zinn.pdf",
+    "assets/chapter-images/zinn-christopher.jpg",
+    ["sioux", "slaves"]
   ],
   [
     "1-18",
@@ -28,13 +35,6 @@ let dataset = [
     ["indians"]
   ],
   [
-    "18-23",
-    "pdfs/18-23.pdf",
-    "https://drive.google.com/file/d/15AFOWVz2Usb2JOCRiOqepS22kALw3-xh/view?usp=sharing",
-    "assets/chapter-images/spanish-aztecs.jfif",
-    ["poo"]
-  ],
-  [
     "28-36",
     "pdfs/28-36.pdf",
     "https://drive.google.com/file/d/128P964l8zkqUhDJ3Jg9YwBesB5JaxA9p/view?usp=sharing",
@@ -42,10 +42,10 @@ let dataset = [
     ["bengali"]
   ],
   [
-    "Zinn",
-    "pdfs/zinn.pdf",
-    "zinn.pdf",
-    "assets/chapter-images/zinn-christopher.jpg",
-    ["sioux"]
+    "18-23",
+    "pdfs/18-23.pdf",
+    "https://drive.google.com/file/d/15AFOWVz2Usb2JOCRiOqepS22kALw3-xh/view?usp=sharing",
+    "assets/chapter-images/spanish-aztecs.jfif",
+    ["poo"]
   ]
 ]

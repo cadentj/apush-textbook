@@ -162,7 +162,10 @@ function searchValue() {
     if (!searchTerms(value)) {
       createNewData(value.toLowerCase());
     } else {
-      createNewData(searchTerms(value).toLowerCase());
+      let termsFound = searchTerms(value);
+      for (let i = 0; i < termsFound.length; i++) {
+          createNewData(termsFound[i].toLowerCase());
+      }
     }
   } else {
     for (let i = 0; i < dataset.length; i++) {
@@ -178,13 +181,18 @@ function searchValue() {
 }
 
 function searchTerms(value) {
+  let searchPings = new Array();
+
   for (let i = 0; i < dataset.length; i++) {
     let terms = dataset[i][4];
     for (let j = 0; j < terms.length; j++) {
       if (terms[j].toLowerCase() === value.toLowerCase()) {
-        return dataset[i][0];
+        searchPings.push(dataset[i][0]);
       }
     }
+  }
+  if (searchPings != 0) {
+    return searchPings;
   }
   return false;
 }
