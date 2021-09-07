@@ -55,7 +55,7 @@
 
 @media (max-width: 480px) {
   .masthead {
-    background: center center fixed !important;
+    background-size: 100% !important;
   }
 }
 

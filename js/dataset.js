@@ -3,21 +3,21 @@ let dataset = [
     "44-58",
     "pdfs/44-58.pdf",
     "https://drive.google.com/file/d/1O58uaWfENE5mktNUDs55nxF6mAiolpBe/view?usp=sharing",
-    "assets/chapter-images/zinn-christopher.jpg",
+    "assets/chapter-images/44-58.jpg",
     ["sioux"]
   ],
   [
     "58-65",
     "pdfs/58-65.pdf",
     "https://drive.google.com/file/d/1dJuFZM7lO_RQfSWMquJdQUjYUt6rOMXG/view?usp=sharing",
-    "assets/chapter-images/zinn-christopher.jpg",
+    "assets/chapter-images/58-65.jpg",
     ["sioux"]
   ],
   [
     "76-79",
     "pdfs/76-79.pdf",
     "https://drive.google.com/file/d/1Y30vhawbucAdH-E0m_fDFqKIuvMAN5Ve/view?usp=sharing",
-    "assets/chapter-images/zinn-christopher.jpg",
+    "assets/chapter-images/76-79.jpg",
     ["sioux"]
   ],
   [
