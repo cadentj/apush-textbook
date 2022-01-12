@@ -1,51 +1,23 @@
 let dataset = [
   [
-    "44-58",
-    "pdfs/44-58.pdf",
-    "https://drive.google.com/file/d/1O58uaWfENE5mktNUDs55nxF6mAiolpBe/view?usp=sharing",
+    "469-478",
+    "pdfs/469-478.pdf",
+    "https://drive.google.com/file/d/1unONhE0-kesZ7_TpH1kjFsEmI2--eTsr/view?usp=sharing",
     "assets/chapter-images/44-58.jpg",
     ["plantations", "slaves", "slave trade"]
   ],
   [
-    "58-65",
-    "pdfs/58-65.pdf",
-    "https://drive.google.com/file/d/1dJuFZM7lO_RQfSWMquJdQUjYUt6rOMXG/view?usp=sharing",
+    "496-509",
+    "pdfs/496-509.pdf",
+    "https://drive.google.com/file/d/1-CeKhSxSanI8IKFmH728TZQaZQrzk0-5/view?usp=sharing",
     "assets/chapter-images/58-65.jpg",
     ["pilgrims", "plymouth"]
   ],
   [
-    "76-79",
-    "pdfs/76-79.pdf",
-    "https://drive.google.com/file/d/1Y30vhawbucAdH-E0m_fDFqKIuvMAN5Ve/view?usp=sharing",
+    "509-516",
+    "pdfs/509-516.pdf",
+    "https://drive.google.com/file/d/1wzLwo3OvQHqbA5-qye9V0Vz-uugn0EDM/view?usp=sharing",
     "assets/chapter-images/76-79.jpg",
     ["chesapeake"]
-  ],
-  [
-    "Zinn",
-    "pdfs/zinn.pdf",
-    "zinn.pdf",
-    "assets/chapter-images/zinn-christopher.jpg",
-    ["sioux", "slaves"]
-  ],
-  [
-    "1-18",
-    "pdfs/1-18.pdf",
-    "https://drive.google.com/file/d/17asoiZefBqQvzjy3-DRfj1fnH-Sk0S4F/view?usp=sharing",
-    "assets/chapter-images/secoton-image.jpg",
-    ["indians"]
-  ],
-  [
-    "28-36",
-    "pdfs/28-36.pdf",
-    "https://drive.google.com/file/d/128P964l8zkqUhDJ3Jg9YwBesB5JaxA9p/view?usp=sharing",
-    "assets/chapter-images/aztec.jfif",
-    ["bengali"]
-  ],
-  [
-    "18-23",
-    "pdfs/18-23.pdf",
-    "https://drive.google.com/file/d/15AFOWVz2Usb2JOCRiOqepS22kALw3-xh/view?usp=sharing",
-    "assets/chapter-images/spanish-aztecs.jfif",
-    ["poo"]
   ]
 ]
